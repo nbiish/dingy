@@ -4,9 +4,9 @@ Like https://github.com/K3NW48/ahoy but for the wittle baby miners that crash ou
 
 ## Get a wallet address at either of these..
 
-Monero at https://www.getmonero.org/ \
+Monero at https://www.getmonero.org/
 
-CakeWallet app https://play.google.com/store/apps/dev?id=4613572273941486879 \
+CakeWallet app https://play.google.com/store/apps/dev?id=4613572273941486879
 
 Exodus app https://play.google.com/store/apps/details?id=exodusmovement.exodus
 
