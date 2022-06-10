@@ -2,7 +2,7 @@
 
 Like https://github.com/K3NW48/ahoy but for the wittle baby miners that crash out.
 
-## Get a wallet address at either of these..
+## Get a Monero (XMR) wallet address at either of these..
 
 Monero at https://www.getmonero.org/
 
