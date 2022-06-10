@@ -133,14 +133,14 @@ sleep 3s
 RIG="xmrig"
 if [ -d xmrig/build ]
 then echo "${RIG} is already here, so lets do a re-config!  ^.^ "
-else git clone https://github.com/moneroocean/xmrig.git && mkdir xmrig/build
+else git clone https://github.com/xmrig/xmrig.git && mkdir xmrig/build
 fi
 
 
 # TODO create service without sudo for cloud and root users
 function SERV_IT(){
 SERVICE_PATH=${PWD}/xmrig
-sudo cat << EOF > /lib/systemd/system/rig.service
+cat << EOF > /lib/systemd/system/rig.service
 [Unit]
 Description=rig
 [Service]
