@@ -6,7 +6,7 @@
 
 if [ $(id -u) != 0 ]; then
         echo " "
-        echo "you need to run this with \"sudo\" in front of it ^o^"
+        echo "You need to run this with \"sudo\". Like \"sudo (example)\"."
         echo " "
         exit
 fi
