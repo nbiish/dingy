@@ -6,7 +6,7 @@
 
 if [ $(id -u) != 0 ]; then
         echo " "
-        echo "You need to run this with \"sudo\". Like \"sudo (example)\"."
+        echo "You need to run as root.  \"sudo ./anchorsDown.sh\"."
         echo " "
         exit
 fi
