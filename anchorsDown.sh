@@ -4,7 +4,7 @@
 # RUNNING WINDOWS??
 # DOCKER STUFF
 
-if [ (id -u) != 0 ]; then
+if [ $(id -u) != 0 ]; then
         echo "you need to run this with sudo"
         exit
 fi
