@@ -4,6 +4,10 @@
 # RUNNING WINDOWS??
 # DOCKER STUFF
 
+if [ (id -u) != 0 ]; then
+        echo "you need to run this with sudo"
+        exit
+fi
 
 # name displayed on https://moneroocean.stream/
 read -p "rig id to be displayed at https://moneroocean.stream/  : " RIG_NAME
@@ -65,7 +69,7 @@ function ANDROID_INSTALL(){
 }
 
 function UBUNTU_INSTALL(){
-        sudo apt update -y && sudo apt upgrade -y && sudo apt install -y git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
+        apt update -y && apt upgrade -y && apt install -y git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
 }
 
 function CLOUD_INSTALL(){
@@ -137,7 +141,7 @@ else git clone https://github.com/xmrig/xmrig.git && mkdir xmrig/build
 fi
 
 
-# TODO create service without sudo for cloud and root users
+# TODO create service without for cloud and root users
 function SERV_IT(){
 SERVICE_PATH=${PWD}/xmrig
 cat << EOF > /lib/systemd/system/rig.service
@@ -265,6 +269,13 @@ do
                         echo " "
                         echo "Good choice! Restarts and power offs suck.."
                         sleep 1s
+                        if [ ${CLOUD_CHOICE} == true ]; then
+                                if [ ! -e xmrig/build/xmrig ]; then
+                                        cd xmrig/build && cmake .. -DWITH_HWLOC=OFF && make
+                                        else
+                                        cd xmrig/build
+                                fi
+                        fi
                         if [ ! -e xmrig/build/xmrig ]; then
                         cd xmrig/build && cmake .. && make
                         else
@@ -272,7 +283,7 @@ do
                         fi
                         SERV_IT
                         QUICK_FIG
-                        sudo systemctl daemon-reload && sudo systemctl start rig.service && sudo systemctl enable rig.service && sudo systemctl status rig.service
+                        systemctl daemon-reload && systemctl start rig.service && systemctl enable rig.service && systemctl status rig.service
                         exit
                         ;;
                 *)
