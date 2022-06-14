@@ -5,7 +5,9 @@
 # DOCKER STUFF
 
 if [ $(id -u) != 0 ]; then
-        echo "you need to run this with sudo"
+        echo " "
+        echo "you need to run this with \"sudo\" in front of it ^o^"
+        echo " "
         exit
 fi
 
