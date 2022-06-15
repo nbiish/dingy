@@ -4,12 +4,21 @@
 # RUNNING WINDOWS??
 # DOCKER STUFF
 
-if [ $(id -u) != 0 ]; then
+WORKING_HERE="${PWD}"
+ANDROID=""
+cd
+cd ../..
+if [ -d files/ ] ; then
+        ANDROID=true
+        export ANDROID
+        :
+elif [ $(id -u) != 0 ]; then
         echo " "
-        echo "You need to run as root.  \"sudo ./anchorsDown.sh\"."
+        echo "You need to run as root.  \"./anchorsDown.sh\"."
         echo " "
         exit
 fi
+cd ${WORKING_HERE}
 
 # name displayed on https://moneroocean.stream/
 read -p "rig id to be displayed at https://moneroocean.stream/  : " RIG_NAME
@@ -112,13 +121,11 @@ sleep 2s
 WORKING_HERE="${PWD}"
 cd
 cd ../..
-ANDROID=false
 if [ -d etc/ ]; then
 cd ${WORKING_HERE} && UBUNTU_INSTALL
-elif [ -d files/ ]; then
+elif [ ANDROID=true ]; then
 cd ${WORKING_HERE} && ANDROID_INSTALL
-ANDROID=true
-export ANDROID
+
 elif [ -f WinRing0x64.sys ]; then
 cd ${WORKING_HERE} && QUICK_FIG && ./xmrig.exe
 exit
@@ -192,11 +199,19 @@ DROID_RUN_AND_SERVICE="Install and run BUT with a service on next boot."
                                 break
                                 ;;
                         ${DROID_RUN_AND_SERVICE})
+                                if [ ! -e /data/data/com.termux/files/home/.termux/boot/bootRig.sh ]; then
+                                        DROID_RIG_BOOT
+                                fi
+                                echo " "
+                                echo "Download Termux Boot at https://f-droid.org/packages/com.termux.boot/"
+                                echo " "
+                                sleep 4s
                                 if [ ! -e xmrig/build/xmrig ]; then
                                 cd xmrig/build && cmake .. -DWITH_HWLOC=OFF && make
                                 else cd xmrig/build
                                 fi
-                                DROID_RIG_BOOT
+                                
+                                ./xmrig
                                 break
                                 ;;
                         *)
