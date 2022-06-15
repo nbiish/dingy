@@ -18,7 +18,7 @@ elif [ -f WinRing0x64.sys ]; then
         :
 elif [ $(id -u) != 0 ]; then
         echo " "
-        echo "You need to run as root.  \"./anchorsDown.sh\"."
+        echo "You need to run as root.  \"sudo ./anchorsDown.sh\"."
         echo " "
         exit
 fi
@@ -132,8 +132,6 @@ cd ${WORKING_HERE} && ANDROID_INSTALL
 elif [ WINDOWS=true ]; then
 cd ${WORKING_HERE} && QUICK_FIG && ./xmrig.exe
 exit
-else
-
 fi
 
 
