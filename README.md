@@ -1,6 +1,6 @@
-Termux Users  
+***Termux Users***  
 `pkg install termux-exec && git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`  
-Linux and WSL Users   
+***Linux and WSL Users***   
 `git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`
 
 # dingy
@@ -29,9 +29,9 @@ Then open a WSL (Windows Subsytem for Linux) terminal in the same directory you 
 
 ## Android Users
 
-**IMPORTANT**  
-`pkg install termux-exec` before executing `./anchorsDown.sh` <---**!!**  
-**OR** just copy paste this code..  
+***IMPORTANT***  
+`pkg install termux-exec` before executing `./anchorsDown.sh` 
+**OR**  
 `pkg install termux-exec && ./anchorsDown.sh`
 
 
