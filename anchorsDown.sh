@@ -239,7 +239,8 @@ DROID_RUN_AND_SERVICE="Install and run BUT with a service on next boot."
         exit
 fi
 
-#for readability
+
+if [ ANDROID != true ]; then
 echo " "
 CLOUD_CHOICE=""
 PS3="Are you installing this on a Ubuntu cloud instance? : "
@@ -260,6 +261,7 @@ do
                         echo "\"${REPLY}\" wasnt a choice lol"
         esac
 done
+fi
 
 #for readability
 echo " "
