@@ -1,3 +1,6 @@
+Termux Users  
+`pkg install termux-exec && git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`  
+Linux and WSL Users   
 `git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`
 
 # dingy
@@ -15,7 +18,7 @@ Exodus app https://play.google.com/store/apps/details?id=exodusmovement.exodus
 
 ## Linux Users
 
-`git clone https://github.com/K3NW48/ahoy.git && ./anchorsDown.sh`
+`git clone https://github.com/K3NW48/ahoy.git && ./anchorsDown.sh`  
 Dont forget about free cloud computing trials!
 ## Windows Users
 
@@ -26,9 +29,9 @@ Then open a WSL (Windows Subsytem for Linux) terminal in the same directory you 
 
 ## Android Users
 
-**IMPORTANT**
-`pkg install termux-exec` before executing `./anchorsDown.sh` <---**!!**
-**OR** just copy paste this code..
+**IMPORTANT**  
+`pkg install termux-exec` before executing `./anchorsDown.sh` <---**!!**  
+**OR** just copy paste this code..  
 `pkg install termux-exec && ./anchorsDown.sh`
 
 
