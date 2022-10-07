@@ -1,9 +1,10 @@
 ***Termux Users***  
->`pkg install termux-exec && git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`  
-***Linux and WSL Users***   
->`git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`
+>`pkg install termux-exec && git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh` 
 
-# dingy
+***Linux and WSL Users***   
+>`git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`  
+
+### dingy
 
 Like https://github.com/K3NW48/ahoy but for the wittle baby miners that crash out.
 
@@ -16,23 +17,24 @@ CakeWallet app https://play.google.com/store/apps/dev?id=4613572273941486879
 Exodus app https://play.google.com/store/apps/details?id=exodusmovement.exodus
 
 
-## Linux Users
+# Linux Users
 
+Dont forget about free cloud computing trials!  
 `git clone https://github.com/K3NW48/ahoy.git && ./anchorsDown.sh`  
-Dont forget about free cloud computing trials!
-## Windows Users
+
+# Windows Users
 
 Windows users will want to download and extract the Monero Ocean miner https://github.com/MoneroOcean/xmrig/releases
 
 Then open a WSL (Windows Subsytem for Linux) terminal in the same directory you extracted the xmrig win64 zip to and enter : \
-`git clone https://github.com/K3NW48/ahoy.git && ./ahoy/anchorsDown.sh`
+`git clone https://github.com/K3NW48/ahoy.git && ./ahoy/anchorsDown.sh`  
 
-## Android Users
+# Android Users
 
 ***IMPORTANT***  
-`pkg install termux-exec` before executing `./anchorsDown.sh` 
+`pkg install termux-exec` before executing `./anchorsDown.sh`  
 **OR**  
-`pkg install termux-exec && ./anchorsDown.sh`
+`pkg install termux-exec && ./anchorsDown.sh`  
 
 
 Android users will want Termux from FDroid https://f-droid.org/en/packages/com.termux/
