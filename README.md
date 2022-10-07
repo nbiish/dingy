@@ -36,7 +36,7 @@ Like https://github.com/K3NW48/ahoy but for the wittle baby miners that crash ou
 ***IMPORTANT***  
 >`pkg install termux-exec` before executing `./anchorsDown.sh`  
 ***SO RUN THIS***  
->`pkg install termux-exec && git clone https://github.com/K3NW48`  
+>`pkg install termux-exec && git clone https://github.com/K3NW48/dingy.git && ./dingy/anchorsDown.sh`  
 
   
 >Android users will want Termux from FDroid https://f-droid.org/en/packages/com.termux/
