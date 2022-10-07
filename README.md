@@ -39,7 +39,7 @@ Like https://github.com/K3NW48/ahoy but for the wittle baby miners that crash ou
 >***SO COPY/PASTE THIS***  
 >`pkg install termux-exec && git clone https://github.com/K3NW48/ahoy.git && ./ahoy/anchorsDown.sh`  
   
->Android users will want Termux from [FDroid](https://f-droid.org/en/packages/com.termux/) if you want to keep it working with Termux extensions like [Termux Boot](https://f-droid.org/en/packages/com.termux.boot/).
+>Android users will want Termux from [FDroid](https://f-droid.org/en/packages/com.termux/) if you want to keep it working with extensions like [Termux Boot](https://f-droid.org/en/packages/com.termux.boot/).
 >
 >The [Termux repo on Github](https://github.com/termux/termux-app/releases) is also an option, however Termux boot is only available for the FDroid release.
 >
