@@ -1,30 +1,40 @@
+`git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`
+
 # dingy
 
 Like https://github.com/K3NW48/ahoy but for the wittle baby miners that crash out.
 
 ## Get a Monero (XMR) wallet address at either of these..
 
-Monero at https://www.getmonero.org/
+Monero at https://www.getmonero.org/ 
 
-CakeWallet app https://play.google.com/store/apps/dev?id=4613572273941486879
+CakeWallet app https://play.google.com/store/apps/dev?id=4613572273941486879 
 
 Exodus app https://play.google.com/store/apps/details?id=exodusmovement.exodus
 
-## Windows
+
+## Linux Users
+
+`git clone https://github.com/K3NW48/ahoy.git && ./anchorsDown.sh`
+Dont forget about free cloud computing trials!
+## Windows Users
 
 Windows users will want to download and extract the Monero Ocean miner https://github.com/MoneroOcean/xmrig/releases
 
-Then open a terminal in the same directory you extracted the xmrig win64 zip to and enter : \
+Then open a WSL (Windows Subsytem for Linux) terminal in the same directory you extracted the xmrig win64 zip to and enter : \
 `git clone https://github.com/K3NW48/ahoy.git && ./ahoy/anchorsDown.sh`
 
-## Linux and Android Termux
+## Android Users
 
-Should be ran in the $HOME directory for Linux and Termux. Windows users will be fine.
-Detects OS of Android, Linux, or Windows and installs individual dependencies automagically.
+**IMPORTANT**
+`pkg install termux-exec` before executing `./anchorsDown.sh` <---**!!**
+**OR** just copy paste this code..
+`pkg install termux-exec && ./anchorsDown.sh`
+
 
 Android users will want Termux from FDroid https://f-droid.org/en/packages/com.termux/
 
-Termux Github suggests that fdroid is used if you want to keep it working with fdroid termux extensions, like Termux Boot and Termux Tasker.
+Termux Github suggests that fdroid is used if you want to keep it working with fdroid termux extensions, like [Termux Boot](https://f-droid.org/en/packages/com.termux.boot/) and [Termux Tasker](https://f-droid.org/en/packages/com.termux.tasker/).
 
-Heres is a quick tutorial on install, setup, starting and stopping on Android Termux.
+Heres is a old tutorial on install, setup, starting and stopping on Android Termux.
 https://youtu.be/x99l71_iG4I
