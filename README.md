@@ -1,7 +1,7 @@
 ***Termux Users***  
-`pkg install termux-exec && git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`  
+>`pkg install termux-exec && git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`  
 ***Linux and WSL Users***   
-`git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`
+>`git clone https://github.com/K3NW48/dingy.git && ./anchorsDown.sh`
 
 # dingy
 
