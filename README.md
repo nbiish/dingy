@@ -5,7 +5,7 @@ Like https://github.com/K3NW48/ahoy but for the wittle baby miners that crash ou
 # QUICK INSTALL  
 
 >***Termux Users***  
->`pkg install termux-exec git && git clone https://github.com/K3NW48/dingy.git && ./dingy/anchorsDown.sh` 
+>`echo 'y' | pkg install termux-exec git && git clone https://github.com/K3NW48/dingy.git && ./dingy/anchorsDown.sh` 
 >
 >***Linux and WSL Users***   
 >`git clone https://github.com/K3NW48/dingy.git && ./dingy/anchorsDown.sh`  
