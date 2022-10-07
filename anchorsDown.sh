@@ -33,7 +33,7 @@ if [ -f WinRing0x64.sys ]; then
                 esac
         done
         :
-elif [ $(id -u) != 0 ]; then
+elif [ $(uname -a | grep -oci 'linux') == 1 && $(id -u) != 0 ]; then
         echo " "
         echo "You need to run as root.  \"sudo ./anchorsDown.sh\"."
         echo " "
