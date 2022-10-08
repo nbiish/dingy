@@ -8,7 +8,7 @@ Like https://github.com/K3NW48/ahoy but for the wittle baby miners that crash ou
 > `echo 'y' | pkg install termux-exec git && git clone https://github.com/K3NW48/dingy.git && ./dingy/anchorsDown.sh`
 >
 > **_Linux and WSL Users_**  
-> `git clone https://github.com/K3NW48/dingy.git && ./dingy/anchorsDown.sh`
+> `git clone https://github.com/K3NW48/dingy.git && sudo ./dingy/anchorsDown.sh`
 
 ### Get a Monero (XMR) wallet address at either of these..
 
