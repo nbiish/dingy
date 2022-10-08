@@ -43,5 +43,5 @@ Like https://github.com/K3NW48/ahoy but for the wittle baby miners that crash ou
 >
 > The [Termux repo on Github](https://github.com/termux/termux-app/releases) is also an option, however Termux boot is only available for the FDroid release.
 >
-> Heres is a old tutorial on install, setup, starting and stopping on Android Termux.
+> Heres is a tutorial on install, setup, starting/stopping on Android Termux.
 > https://youtu.be/KPbLXv7u6Hc
