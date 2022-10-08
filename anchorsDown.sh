@@ -1,20 +1,15 @@
 #!/usr/bin/env bash
 
 
-# RUNNING WINDOWS??
-# DOCKER STUFF
+ANDROID=false
+WINDOWS=false
 
-WORKING_HERE="${PWD}"
-ANDROID=""
-WINDOWS=""
-cd
-cd ../..
 if [ $(uname -a | grep -oci 'android') == 1 ]; then
         ANDROID=true
         export ANDROID
 fi
 
-if [ -f WinRing0x64.sys ]; then
+if [ $(uname -a | grep -oci 'wsl') == 1 ]; then
         WINDOWS=true
         WIN_INSTALL_YES="Yes! I'm READY!! ^,^ "
         WIN_INSTALL_NO="Not yet! Thanks for the link! *.* "
@@ -39,7 +34,6 @@ elif [ $(uname -a | grep -oci 'linux') == 1 && $(id -u) != 0 ]; then
         echo " "
         exit
 fi
-cd ${WORKING_HERE}
 
 # name displayed on https://moneroocean.stream/
 read -p "rig id to be displayed at https://moneroocean.stream/  : " RIG_NAME
@@ -97,7 +91,7 @@ echo " "
 
 
 function ANDROID_INSTALL(){
-        pkg update -yf && pkg upgrade -yf && echo 'y' | pkg  install wget git cmake clang libuv automake libtool autoconf
+        pkg update -yf && pkg upgrade -yf && echo 'y' | pkg install wget git cmake clang libuv automake libtool autoconf
 }
 
 function UBUNTU_INSTALL(){
@@ -138,18 +132,16 @@ echo "..checking OS and then installing dependencies THIS device needs...  #.#  
 echo " "
 sleep 2s
 
-# CHECK OS AND CD BACK TO WORKING DIRECTORY
-if [ WINDOWS == true ]; then
+# CHECK OS AND UPDATE
+if [ "$WINDOWS" == true ]; then
 QUICK_FIG && ./xmrig.exe
 exit
 fi
-WORKING_HERE="${PWD}"
-cd
-cd ../..
-if [ -d etc/ ]; then
-cd ${WORKING_HERE} && UBUNTU_INSTALL
-elif [ ANDROID=true ]; then
-cd ${WORKING_HERE} && ANDROID_INSTALL
+
+if [ "$ANDROID" == true ]; then
+ANDROID_INSTALL
+else
+UBUNTU_INSTALL
 fi
 
 
@@ -198,7 +190,7 @@ sleep 3s
 #for readability
 echo " "
 
-if [ ANDROID == true ]; then
+if [ "$ANDROID" == true ]; then
 PS3="Running your mobile rig as : "
 DROID_RUN="Standard install and run."
 DROID_RUN_AND_SERVICE="Install and run BUT with a service on next boot."
