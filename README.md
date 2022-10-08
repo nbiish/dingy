@@ -19,7 +19,7 @@ Like https://github.com/K3NW48/ahoy but for the wittle baby miners that crash ou
 > Exodus app https://play.google.com/store/apps/details?id=exodusmovement.exodus
 >
 > **_USE Your Monero(XMR)_**  
-> Use my [Crypto.com](https://crypto.com/app/ucnwaccbb7) affiliate link to use your Monero(XMR) and we both get $25 extra!
+> Use my [Crypto.com](https://crypto.com/app/ucnwaccbb7) affiliate link to use your Monero(XMR) after swapping to BTC and we both get $25 extra!
 
 # Linux Users
 
@@ -44,4 +44,4 @@ Like https://github.com/K3NW48/ahoy but for the wittle baby miners that crash ou
 > The [Termux repo on Github](https://github.com/termux/termux-app/releases) is also an option, however Termux boot is only available for the FDroid release.
 >
 > Heres is a old tutorial on install, setup, starting and stopping on Android Termux.
-> https://youtu.be/x99l71_iG4I
+> https://youtu.be/KPbLXv7u6Hc
