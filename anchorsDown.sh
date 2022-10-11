@@ -91,6 +91,11 @@ done
 #for readability
 echo " "
 
+function RIG_STATUS(){
+        echo "echo "Scope your rigs status at https://moneroocean.stream"
+        echo " "
+        sleep 5s"
+}
 
 function ANDROID_INSTALL(){
         pkg update -yf && pkg upgrade -yf && echo 'y' | pkg install wget git cmake clang libuv automake libtool autoconf
@@ -219,6 +224,9 @@ DROID_RUN_AND_SERVICE="Install and run BUT with a service on next boot."
                                 else cd xmrig/build
                                 fi
                                 
+                                QUICK_FIG
+                                RIG_STATUS
+                                termux-wake-lock
                                 ./xmrig
                                 break
                                 ;;
@@ -229,6 +237,7 @@ DROID_RUN_AND_SERVICE="Install and run BUT with a service on next boot."
                 esac
         done
         QUICK_FIG
+        RIG_STATUS
         termux-wake-lock
         ./xmrig
         exit
@@ -288,6 +297,7 @@ do
                                         cd xmrig/build
                         fi
                         QUICK_FIG
+                        RIG_STATUS
                         ./xmrig
                         exit
                         ;;
@@ -309,6 +319,7 @@ do
                         fi
                         SERV_IT
                         QUICK_FIG
+                        RIG_STATUS
                         systemctl daemon-reload && systemctl start rig.service && systemctl enable rig.service && systemctl status rig.service
                         exit
                         ;;
